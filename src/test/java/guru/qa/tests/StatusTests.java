@@ -87,7 +87,7 @@ public class StatusTests {
             .then()
             .log().all()
             .statusCode(200)
-            .body(matchesJsonSchemaInClasspath("schemas/schema_response_status_selenide.txt"))
+            .body(matchesJsonSchemaInClasspath("schemas/schema_response_status_selenide.json"))
             .body("total", is(5));
   }
 }
